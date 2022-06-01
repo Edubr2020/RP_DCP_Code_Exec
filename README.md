@@ -42,8 +42,8 @@ host name or IP. Also replace '%username%' with the target´s actual Windows use
 
 Note: The Windows username can be obtained via requests to an SMB server or WebDAV server.
 
-
-
+Affected versions: 16.0.3.51, Cloud 17.0.9.17, v.20.0.7.309
+on any Windows version (XP up to 11)
 
 
 
