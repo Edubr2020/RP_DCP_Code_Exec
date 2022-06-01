@@ -1,14 +1,16 @@
 Real Player 'DCP://' URI Remote Arbitrary Code Execution Vulnerability
 
+video demo: https://youtu.be/AMODp3iTnqY
+
 The 'DCP://' URI scheme is an internal protocol used by Real Player to retrieve URLs to display in the Player browser tab.
 It stands for 'Data Cache Protocol'. It will retrieve files from '%appdata%\real\realplayer'.
 These files are simple '.ini' files with the following code:
 
-============ sample_dcp.ini =======================
+---sample_dcp.ini---
 [urls]
 onlineurl=http://example.com/
 offlineurl=file:///c:/example.htm
-===================================================
+----
 
 The 'offlineurl' attribute seems to be ignored, however it´s possible to pass arbitrary URLs, including URLs to local files
 and unsafe 'Javascript:' URIs.
